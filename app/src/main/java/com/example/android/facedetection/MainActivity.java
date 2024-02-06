@@ -49,13 +49,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        //Checking requestCode if it matches with our app's requestCode or not coz there might be other apps which may use
-        // camera too and also checking resultCode coz it might be possible that the user just opens and closes the app without
-        // clicking the open camera button
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK){
 
-            //Using bundle coz the image captured will be sent in bitmap format in the vision library and as bitmap is a
-            // collection of data containing many strings,ints etc we need to bind that data together using bundle
             assert data != null;
             Bundle extras = data.getExtras();
             Bitmap bitmap = (Bitmap) extras.get("data");
@@ -93,16 +88,14 @@ public class MainActivity extends AppCompatActivity {
 
             //Looping thru the list named faces using for each loop
             for (Face ignored :faces) {
-
-//                            .concat("\nSmile: "+face.getSmilingProbability()*100+"%")
-//                            .concat("\nLeft Eye: "+face.getLeftEyeOpenProbability()*100+"%")
-//                            .concat("\nRight Eye: "+face.getRightEyeOpenProbability()*100+"%");
                 i++;
             }
             resultText = resultText.concat("\n"+(i-1)+" Faces Detected");
 
             if (faces.size() == 0)
                 Toast.makeText(MainActivity.this, "NO FACES", Toast.LENGTH_SHORT).show();
+            else if(faces.size() == 1)
+                Toast.makeText(MainActivity.this,"Face Detected",Toast.LENGTH_SHORT).show();
             else{
                 Bundle bundle = new Bundle();
                 bundle.putString(FaceDetection.RESULT_TEXT,resultText);
