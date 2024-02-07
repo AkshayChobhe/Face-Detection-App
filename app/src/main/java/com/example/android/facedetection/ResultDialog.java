@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
+//import org.jetbrains.annotations.Nullable;
+
 public class ResultDialog extends DialogFragment {
     Button okButton;
     TextView resultTV;
