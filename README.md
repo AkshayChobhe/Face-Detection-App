@@ -33,16 +33,19 @@
 
 Here are some of the project's best features:
 
-*   Intuitive User Interface
-*   Firebase ML Kit Integration
+*   Real-time Face Detection
+*   High-Accuracy Landmark Detection
+*   Face Classification
+*   User-Friendly Interface
+*   Camera Integration
+*   Result Dialog
+*   Firebase Integration
 *   Error Handling
 *   GitHub Collaboration
-*   Image Capture by Camera
 
 <h2> Prerequisites</h2>
 
 * <ins>Android Studio</ins>: Make sure you have Android Studio installed on your development machine.
-* <ins>Firebase ML Kit</ins>: Make sure to add dependencies of Firebase ML Kit.
   
 <h2>🛠️ Installation Steps:</h2>
 
@@ -69,7 +72,7 @@ git clone https://github.com/AkshayChobhe/Face-Detection-App.git
 
 <p>5. <ins>Explore the App</ins></p>
 
-* Once the app is launched on your device, you can capture an real time image by camera and it will detect the number of faces in the image.
+* Once the app is launched, explore the features, capture images, and experience real-time face detection.
 <p>6. <ins>Enjoy !</ins></p>
 
 * That's it! You've successfully installed and set up the Face Detection Android application.
@@ -79,12 +82,13 @@ git clone https://github.com/AkshayChobhe/Face-Detection-App.git
 
 Technologies used in the project:
 
-*   Android Studio
-*   Java Programming Language
-*   XML
-*   Firebase ML Kit
-*   Gradle
-*   GitHub
+* [Android Studio](https://developer.android.com/studio): The official IDE for Android app development.
+* [Java Programming Language](https://www.java.com/): The primary programming language for Android app development.
+* [XML](https://developer.mozilla.org/en-US/docs/Web/XML): Used for designing the app's user interface layout.
+* [ML Kit](https://developers.google.com/ml-kit): Google's machine learning SDK for mobile applications, used for real-time face detection.
+* [Firebase](https://firebase.google.com/): Integrated for cloud-based functionality, including ML Kit and user authentication.
+
+These technologies work together to provide a robust and feature-rich face detection experience on Android devices.
 
 <h2>💖Like my work?</h2>
 If you encounter any issues or have questions regarding the MahaNews Android application, feel free to reach out for assistance. Here are a few ways to get help:
